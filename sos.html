@@ -35,10 +35,14 @@
     </div>
 
     <script>
-    function sendSOS() {
-        navigator.vibrate([100, 100, 100, 300, 300, 300, 100, 100, 100]);
-    }
-    document.getElementById("sosButton").addEventListener("click", sendSOS);
+            document.getElementById('sosButton').addEventListener('click', function() {
+              if (navigator.vibrate) {
+                // Vibration pattern: short-short-short, long-long-long, short-short-short
+                navigator.vibrate([200, 100, 200, 100, 200, 300, 700, 300, 700, 300, 700, 300, 200, 100, 200, 100, 200]);
+              } else {
+                alert("Vibration not supported on this device.");
+              }
+            });
     </script>
 
     </body>
