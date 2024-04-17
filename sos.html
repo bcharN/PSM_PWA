@@ -1,0 +1,9 @@
+<button id="sosButton">SOS</button>
+
+<script>
+    function sendSOS() {
+        navigator.vibrate([100, 100, 100, 300, 300, 300, 100, 100, 100]);
+    }
+    document.getElementById("sosButton").addEventListener("click", sendSOS);
+</script>
+
