@@ -6,6 +6,4 @@ window.onload = () => {
                .register('./sw.js');
     }
   }
-
-
   

@@ -7,6 +7,11 @@
         "src": "icons/icon.png",
         "type": "image/png",
         "sizes": "128x128"
+      },
+      {
+        "src": "icons/icon2.png",
+        "type": "image/png",
+        "sizes": "256x256"
       }
     ],
     "lang": "en-US",
